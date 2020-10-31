@@ -2,6 +2,7 @@ import getData from '../utils/getData';
 
 const Home = async () => {
     const characters =  await getData();
+    console.log(characters)
     const view = `
         <div class="Characters">
             ${characters.results.map(character => `
